@@ -1,7 +1,6 @@
 const validaionInputRef = document.querySelector('#validation-input');
-//console.log(validaionInputRef.dataset.dataLength);
+
 const length = +validaionInputRef.getAttribute('data-length');
-console.log(length);
 
 validaionInputRef.addEventListener('change', event => {
   if (event.target.value.length === length) {

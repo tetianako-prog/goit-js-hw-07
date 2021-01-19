@@ -19,7 +19,6 @@ const images = [
 const imageItems = images
   .map(item => `<li><img src=${item.url} alt=${item.alt}/></li>`)
   .reduce((acc, item) => acc + item, '');
-console.log(imageItems);
 
 const galleryRef = document.querySelector('#gallery');
 
